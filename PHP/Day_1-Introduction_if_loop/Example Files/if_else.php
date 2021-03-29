@@ -41,3 +41,10 @@ if($var1== 5 AND $var2 == 3)
 // OR ||
 if($var1== 5 || $var2 == 3)
 if($var1== 5 OR $var2 == 3)
+
+
+
+$a = 5;
+$b = 2;
+
+if($a >9 || $b > 9)

@@ -3,7 +3,8 @@
 	/*
 	- Exercise 1 :
 		
-		Based on the character exercise, display all his caracteristics using a loop.
+		Based on the character exercise, 
+		display all his caracteristics using a loop.
 
 	*/
 
