@@ -35,6 +35,23 @@
             else
                 echo 'You didnt clicked the checkbox';
         }
+
+
+
+        if(empty($lastName)) {
+            // code...
+        } elseif(empty($firstName)) {
+            //code...
+        }
+
+
+        if(empty($lastName)) {
+            // code...
+        } 
+        
+        if(empty($firstName)) {
+            //code...
+        }
     }
     ?>
 
