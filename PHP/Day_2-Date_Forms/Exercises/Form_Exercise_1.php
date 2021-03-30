@@ -1,11 +1,12 @@
-<?php 
+<?php
 
 /*
     - Exercise : 
 	
 		-- Part 1 :
 	   		Create a page:
-	        - signin.php: User registration page, with the following fields:
+	        - signin.php: User registration page, 
+			with the following fields:
 	            - Name
 	            - First name
 	            - E-mail
@@ -14,7 +15,7 @@
 	            - Checkbox "Subscribe to the newsletter"
 
 		-- Part 2 :
-			1. If we arrive on the page without the form being submitted, we will post the form, otherwise we will display the summary.
+			1. If we arrive on the page without the form being submitted, we will display the form, otherwise we will display the summary.
 
 			2. Add validators on the different fields of the form:
 				- The name and the first name are mandatory.

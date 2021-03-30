@@ -18,7 +18,7 @@
         <input type="password" name="password" placeholder="Passswooooord">
         <br>
 
-        <input type="submit" value="SEND">
+        <input type="submit" name="submitBtn" value="SEND">
     </form>
 </body>
 
