@@ -26,7 +26,4 @@
         You can use mysqli_num_rows function to know how many records you got.
 
 
-
-
-
 */
