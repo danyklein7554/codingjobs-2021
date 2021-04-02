@@ -17,8 +17,8 @@
             * submit btn
     
     - Step 2 :
-        If the form is submitted, you have to insert the new user in the DB
-        .
+        If the form is submitted, you have to insert the new user in the DB.
+        
         But first, you have to check :
             * username, mail and password must not be empty !
             * mail must be a valid one
@@ -28,4 +28,10 @@
 
     - Step 3 :
         If everything is good, insert the new user in the DB !
-            
+
+    - Step 4 :
+            Edit the login.
+            Now the login should verify if the password match the hash one !!
+
+            Be carefull, your old users dont have a hash password.
+    */
