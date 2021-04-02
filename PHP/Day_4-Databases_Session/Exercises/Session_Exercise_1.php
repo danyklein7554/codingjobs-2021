@@ -2,7 +2,7 @@
 /*
     Create two pages :
 
-    `create-session.php`
+    `create-cookie.php`
         The page will initialize a cookie variable 'viewed' to `true`;
 
     `get-viewed.php`
@@ -11,4 +11,4 @@
 
         Otherwise, it will display the message 'You have not visited
         the create-session page '
- */
+*/

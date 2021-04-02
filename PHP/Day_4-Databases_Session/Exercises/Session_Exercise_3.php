@@ -14,7 +14,7 @@
 
     Step 3: 
 		Once the user logged in, you have to open a session.
-		In this session you'll have to save the username.
+		In this session you'll have to save the email adress.
 
 	Step 4:
 		Create a page 'account.php'.
