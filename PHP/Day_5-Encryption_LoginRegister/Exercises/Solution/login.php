@@ -23,11 +23,17 @@ if (isset($_POST['login'])) {
     // Does the user exists in my db ?
     if ($nb_records > 0) {
 
-        session_start();
-        // Save the mail (from my form) into the session
-        $_SESSION['mail'] = $_POST['email'];
+        $user = mysqli_fetch_assoc($results);
 
-        echo '<a href="account.php">Go to account page</a>';
+        // Check if passwords matches
+        if (password_verify($password, $user['password'])) {
+            session_start();
+            // Save the mail (from my form) into the session
+            $_SESSION['mail'] = $_POST['email'];
+            echo '<a href="account.php">Go to account page</a>';
+        } else {
+            echo 'Password doesnt match';
+        }
     } else {
         echo "Wrong credentials.";
     }
