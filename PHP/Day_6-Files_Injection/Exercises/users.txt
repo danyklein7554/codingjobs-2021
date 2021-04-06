@@ -1,4 +1,4 @@
 toto;toto@gmail.com
 simon;simon@gmail.com
-daviiiiid,dav@gmail.com
-bananaguy, banana@banana.fr
+daviiiiid;dav@gmail.com
+bananaguy;banana@banana.fr
