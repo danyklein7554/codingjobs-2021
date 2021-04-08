@@ -29,7 +29,11 @@ function recursive($number)
 }
 
 recursive(48);
-    // start at 48
+
+/* What is does / How it works : 
+
+recursive(48);
+// start at 48
     echo 48 . '<br>';
     recursive(49);
         // 49
@@ -37,3 +41,4 @@ recursive(48);
         recursive(50);
             // 50
             echo 50 . '<br>';
+*/
