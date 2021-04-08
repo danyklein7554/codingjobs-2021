@@ -10,10 +10,36 @@
 
 */
 
+function recursive2($x)
+{
+    echo $x . '<br>';
+
+    if ($x > 0) {
+        recursive2($x - 1);
+    }
+}
+
+
+// Call the function
+recursive2(20);
+
 /*
 
     Bonus (only if you have time) :
 
     Write a recursive function that return the sum of all number from $number to 50
     
+
+
 */
+echo '<hr>';
+
+function multiply($a, $b)
+{
+
+    if ($b > 0) {
+        return $a + multiply($a, $b - 1);
+    }
+}
+
+echo 'Result : ' . multiply(3, 4);
