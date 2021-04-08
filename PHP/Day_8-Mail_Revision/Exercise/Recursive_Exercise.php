@@ -10,12 +10,10 @@
 
 */
 
-/* 
+/*
+
     Bonus (only if you have time) :
 
-    Write a recursive function that calculate the multiplication of two numbers using only the addition.
-
-    Example : 
-        4*3 = 4+4+4
-
+    Write a recursive function that return the sum of all number from $number to 50
+    
 */
