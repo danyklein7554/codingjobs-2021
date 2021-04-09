@@ -13,6 +13,7 @@ $n = 2.5;
 $z = $x + $y;
 $k = $n * $y;
 
+echo gettype($a) . "<br>";
 
 /*
 	Show the date (in a nice format) for :
