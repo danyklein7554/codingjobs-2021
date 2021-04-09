@@ -9,10 +9,16 @@ $x = 5;
 $y = "1";
 $z = true;
 $n = 2.5;
-
 $z = $x + $y;
 $k = $n * $y;
 
+echo '$x is of type : ' . gettype($x) . '<br>';
+echo '$y is of type : ' . gettype($y) . '<br>';
+echo '$z is of type : ' . gettype($z) . '<br>';
+echo '$n is of type : ' . gettype($n) . '<br>';
+echo '$k is of type : ' . gettype($k) . '<br>';
+
+$var = (int) $_POST['toto'];
 
 /*
 	Show the date (in a nice format) for :
