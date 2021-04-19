@@ -5,7 +5,7 @@
 
     -- Exercise : 
 
-    This exercise is based on Ajax_Exercise_2.
+    This exercise is based on Ajax_Exercise_1.
 
 	- Step 1 :
 		You should change 'movies.html' and 'get-movies.php'
