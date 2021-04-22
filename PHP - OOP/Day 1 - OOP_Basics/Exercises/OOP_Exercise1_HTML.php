@@ -29,13 +29,13 @@
   Use Example :
  */
 
-require_once 'Solutions/HtmlString.php';
+//require_once 'Solutions/HtmlString.php';
 
-$markup = new HtmlString();
-$markup->setString('My strinnnng');
-$bold = $markup->getBoldString();
+//$markup = new HtmlString();
+//$markup->setString('My strinnnng');
+///$bold = $markup->getBoldString();
 
-echo $bold; /* Display <b>My strinnnng</b> */
+//echo $bold; /* Display <b>My strinnnng</b> */
 
 /*
   Part 2 :
