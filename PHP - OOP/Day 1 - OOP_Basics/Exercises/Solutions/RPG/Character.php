@@ -9,6 +9,9 @@ class Character
     private $_warCry;
     private $_race;
 
+    // reference to an equipment
+    private $_equipment;
+
     public function __construct($race, $name)
     {
         $this->_name = $name;
@@ -37,14 +40,8 @@ class Character
     }
 
 
-    /*
-		> A name
-		> Health points (default 100)
-		> Points of attack (default 10)
-		> Defense points (default 5)
-		> A war-cry (eg "Attaaaaaack!")
-		> There are several types of characters: Humans, Orcs and Elves.
-
-
-*/
+    public function setEquipment($equipment)
+    {
+        $this->_equipment = $equipment;
+    }
 }
