@@ -19,9 +19,9 @@ The main purpose of inheritance is reusability.
 
 class Vehicles
 {
-    // Properties
-    public $nbWheel;
-    public $brand;
+    // Properties (only children can access)
+    protected $nbWheel;
+    protected $brand;
     // private : children can't access it
     private $model;
 

@@ -10,7 +10,7 @@ class Character
     private $_race;
 
     // reference to an equipment
-    private $_equipment;
+    private $_inventory;
 
     public function __construct($race, $name)
     {
@@ -20,6 +20,8 @@ class Character
         $this->_defense = 5;
         $this->setRace($race);
         $this->setWarCry();
+
+        $this->_inventory = array();
     }
 
     public function setRace($race)
