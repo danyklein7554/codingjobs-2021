@@ -4,18 +4,22 @@ require_once 'Equipment.php';
 require_once 'Character.php';
 
 $legolas = new Character('Elf', 'Legolas');
+$orc = new Character('Orc', 'MyCharacter');
 
-echo '<pre>';
-var_dump($legolas);
-echo '</pre>';
+$sword = new Equipment('Sword', 'Death Sword', 10, 0, 0);
+$shield = new Equipment('Shield', 'My own shield', 0, 20, 0);
+$hammer = new Equipment('Hammer', 'My own hammer', 10, 5, 0);
 
-$sword = new Equipment('Sword', 'Crazy Sword', 10, 0, 0);
 
-echo '<pre>';
-var_dump($sword);
-echo '</pre>';
+echo $legolas->addEquipment($sword) . '<br>';
+echo $legolas->addEquipment($sword) . '<br>';
+echo $legolas->addEquipment($sword) . '<br>';
+echo $legolas->addEquipment($shield) . '<br>';
+echo $legolas->addEquipment($shield) . '<br>';
+echo $legolas->removeEquipment($hammer) . '<br>';
 
-$legolas->setEquipment($sword);
+echo '<hr>';
+$legolas->displayEquipment();
 
 echo '<pre>';
 var_dump($legolas);
