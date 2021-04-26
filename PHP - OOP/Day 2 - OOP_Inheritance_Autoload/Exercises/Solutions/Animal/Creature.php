@@ -2,6 +2,7 @@
 
 class Creature
 {
+    // Protected : Properties accessible within the class and its subclass but not outside.
     protected $_name;
     protected $_color;
     protected $_gender;
