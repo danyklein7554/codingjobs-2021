@@ -1,3 +1,5 @@
+<?php require_once 'nav.html'; ?>
+
 <?php
 
 // Grab my ID from my url
@@ -19,20 +21,20 @@ $prep->bindValue(1, $id);
 $prep->execute();
 
 // Fetch as associative array
-$movie = $prep->fetchAll(PDO::FETCH_ASSOC);
-?>
+$movie = $prep->fetch(PDO::FETCH_ASSOC);
+
 ?>
 
 <p>
-    <img src="<?= $movies[0]['poster']; ?>" width="100px">
+    <img src="<?= $movie['poster']; ?>" width="100px">
     <br>
 
     <strong>Title :</strong>
-    <?= $movies[0]['title']; ?>
+    <?= $movie['title']; ?>
     <br>
 
     <strong>Date : </strong>
-    <?= $movies[0]['date_of_release']; ?>
+    <?= $movie['date_of_release']; ?>
 
     <hr>
 </p>
