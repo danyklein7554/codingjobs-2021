@@ -31,6 +31,21 @@ Step 2 :
 	- Edit FlowerManager::findAll() method.
 	This method should now return a set(array) of Flower objects.
 
+Step 3 :
+
+	- Edit the FlowerManager class.
+	Add a new method FlowerManager::find($id).
+	This function retrieve one specific flower (thanks to the id) and return it.
+
+	- On the view-flowers page, add a link 'see more' next to each flowers.
+	This link redirect to 'flower-detail' page.
+
+	- Create page 'flower-detail.php'
+	Use get method (same as movie) to grab the id of the flower.
+
+	- Display the flower using FlowerManager::find($id) method.
+	
+
  ?>
 
 
