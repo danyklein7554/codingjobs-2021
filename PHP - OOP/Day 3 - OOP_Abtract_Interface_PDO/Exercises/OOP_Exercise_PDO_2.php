@@ -21,7 +21,15 @@ Steps : Display flowers
 
 	Display all the flowers on the page.
 
-Step 2 : Ask the teacher if you want extra work ;)
+Step 2 : 
+
+	- Create the class Flower.
+	This class will represent a flower (name, price).
+
+	- Create getter and setter
+
+	- Edit FlowerManager::findAll() method.
+	This method should now return a set(array) of Flower objects.
 
  ?>
 
