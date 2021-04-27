@@ -10,7 +10,7 @@ Overview :
 	In this exercise, you have to use PDO.
 
 
-Steps : Display flowers
+Step 1 : Display flowers
 
 	- We will not take into account the creation of the flowers, they will be created manually in the database.	
 	

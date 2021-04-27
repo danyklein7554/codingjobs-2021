@@ -2,7 +2,10 @@
 
 require_once 'database.php';
 
-$results = $pdo->query('SELECT * FROM movies');
+$results = $pdo->query('SELECT *, m.id as movieId 
+FROM movies m
+INNER JOIN directors d
+ON d.id = m.director_id');
 
 // Fetch as associative array
 $movies = $results->fetchAll(PDO::FETCH_ASSOC);
@@ -41,7 +44,7 @@ $movies = $results->fetchAll(PDO::FETCH_ASSOC);
                 you must give the parameter id.
                 This will send the current movie id to the detail page.
             -->
-            <a href="movie.php?id=<?= $movie['id']; ?>">Read more</a>
+            <a href="movie.php?id=<?= $movie['movieId']; ?>">Read more</a>
             <hr>
         </p>
     <?php endforeach; ?>
