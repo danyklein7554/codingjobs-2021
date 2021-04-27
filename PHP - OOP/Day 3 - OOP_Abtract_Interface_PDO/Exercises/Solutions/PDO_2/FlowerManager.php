@@ -1,5 +1,5 @@
 <?php
-
+require_once 'Flower.php';
 class FlowerManager
 {
 
@@ -15,6 +15,14 @@ class FlowerManager
         // fetch all flowers
         $flowers = $results->fetchAll(PDO::FETCH_ASSOC);
 
-        return $flowers;
+        // Initialize empty array
+        $flowersObject = array();
+
+        // Loop the flowers and create, each time, a new Flower object
+        foreach ($flowers as $flower) {
+            $flowersObject[] = new Flower($flower['id'], $flower['name'], $flower['price']);
+        }
+
+        return $flowersObject;
     }
 }
