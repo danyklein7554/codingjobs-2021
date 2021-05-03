@@ -1,0 +1,6 @@
+Options +FollowSymlinks 
+# Enable rewrite mod of Apache
+RewriteEngine On 
+
+# Rewriting URL
+RewriteRule ^movies$ /index.php?page=movies [L]
