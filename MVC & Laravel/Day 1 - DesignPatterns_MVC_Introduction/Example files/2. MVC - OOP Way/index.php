@@ -31,12 +31,13 @@ if (isset($_GET['page'])) {
     if ($_GET['page'] == 'movies') {
         // Call movie controller
         require_once 'Controller/MovieController.php';
+        $movieCtrl = new MovieController();
 
         // Check if I get an id
         if (isset($_GET['id']))
-            handleMovie($_GET['id']);
+            $movieCtrl->handleMovie($_GET['id']);
         else
-            handleMovies();
+            $movieCtrl->handleMovies();
     } else {
         echo 'Page doesnt exists';
     }

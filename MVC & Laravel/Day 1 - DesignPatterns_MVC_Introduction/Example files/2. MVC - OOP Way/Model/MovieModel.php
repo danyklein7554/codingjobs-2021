@@ -1,41 +1,45 @@
 <?php
 
-// Get PDO Connection
-function getPDO()
+class MovieModel
 {
-    return new PDO('mysql:host=localhost;dbname=movie_db;charset=utf8', 'root', '');
-}
 
-// Get all the movies
-function getMovies()
-{
-    // Connect to the DB 
-    $pdo = getPDO();
+    // Get PDO Connection
+    private function getPDO()
+    {
+        return new PDO('mysql:host=localhost;dbname=movie_db;charset=utf8', 'root', '');
+    }
 
-    // Send the query to the DB
-    $results = $pdo->query('SELECT * FROM movies');
+    // Get all the movies
+    public function getMovies()
+    {
+        // Connect to the DB 
+        $pdo = $this->getPDO();
 
-    // Fetch as associative array
-    $movies = $results->fetchAll(PDO::FETCH_ASSOC);
+        // Send the query to the DB
+        $results = $pdo->query('SELECT * FROM movies');
 
-    // Close connection / release memory
-    $pdo = null;
+        // Fetch as associative array
+        $movies = $results->fetchAll(PDO::FETCH_ASSOC);
 
-    return $movies;
-}
+        // Close connection / release memory
+        $pdo = null;
 
-function getMovie($id)
-{
-    $pdo = getPDO();
+        return $movies;
+    }
 
-    $prep = $pdo->prepare('SELECT * FROM movies WHERE id = ?');
-    $prep->bindValue(1, $id);
-    $prep->execute();
+    public function getMovie($id)
+    {
+        $pdo = $this->getPDO();
 
-    $movie = $prep->fetch(PDO::FETCH_ASSOC);
+        $prep = $pdo->prepare('SELECT * FROM movies WHERE id = ?');
+        $prep->bindValue(1, $id);
+        $prep->execute();
 
-    // Close connection / release memory
-    $pdo = null;
+        $movie = $prep->fetch(PDO::FETCH_ASSOC);
 
-    return $movie;
+        // Close connection / release memory
+        $pdo = null;
+
+        return $movie;
+    }
 }
