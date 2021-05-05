@@ -9,8 +9,8 @@
 	Step 1 :
 
 		When the create form is submitted, you have to check if :
-			name is required, max 30 characters
-			price is required and have to be numeric between 2 and 100€
+			- name is required, max 30 characters
+			- price is required and have to be numeric between 2 and 100€
 
 		Error messages should be display in red.
 
