@@ -21,7 +21,12 @@
     
     Step 3 :
 
-    Mutatorsexercise
+        Edit your Flower model.
+        - Create a accessor for the price attribute. When you retrieve the price, it should display it with € sign.
+            Example : 3€
+
+        - Create a accessor for the date attribute.
+        It should display the date in this format : 13 Mai 2021
     
     Step 4 :
 
