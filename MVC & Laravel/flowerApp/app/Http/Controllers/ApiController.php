@@ -32,4 +32,25 @@ class ApiController extends Controller
         $flowers = Flower::all();
         return $flowers->toJson(JSON_PRETTY_PRINT);
     }
+
+    public function getFlower($id)
+    {
+        $flower = Flower::find($id);
+        if ($flower)
+            return $flower->toJson(JSON_PRETTY_PRINT);
+        else
+            return response(json_encode(['error' => 'Flower not found.']), 404);
+    }
+
+    public function getType($type)
+    {
+        $flowers = Flower::where('type', $type)->get();
+        return $flowers->toJson(JSON_PRETTY_PRINT);
+    }
+
+    public function getLimit($num)
+    {
+        $flowers = Flower::take($num)->get();
+        return $flowers->toJson(JSON_PRETTY_PRINT);
+    }
 }

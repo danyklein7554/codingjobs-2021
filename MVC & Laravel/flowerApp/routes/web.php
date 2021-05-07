@@ -3,6 +3,7 @@
 use App\Http\Controllers\ApiController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FlowerController;
+use App\Http\Controllers\MovieController;
 
 /*
 |--------------------------------------------------------------------------
@@ -41,4 +42,23 @@ Route::delete('/delete/flowers/{id}',  [FlowerController::class, 'destroy']);
 /**** API ****/
 Route::get('/api/magic', [ApiController::class, 'getApi']);
 
+// All flowers :
 Route::get('/api/flowers', [ApiController::class, 'getFlowers']);
+
+// One specific flower : 
+Route::get('/api/flower/{id}', [ApiController::class, 'getFlower']);
+
+
+
+// All flowers from a type : 
+// CANT DO THIS :
+//Route::get('/api/flower/{type}', [ApiController::class, 'getType']);
+// Have to do this :
+Route::get('/api/flower/type/{type}', [ApiController::class, 'getType']);
+
+// Specific amount of results :
+Route::get('/api/flower/limit/{num}', [ApiController::class, 'getLimit']);
+
+
+/**** MOVIES *****/
+Route::get('/movies', [MovieController::class, 'index']);
