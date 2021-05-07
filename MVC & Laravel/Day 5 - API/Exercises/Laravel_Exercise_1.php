@@ -9,7 +9,8 @@
 
     Step 0:
         Edit your database.
-        Flower table should now have a 'type' columns (ENUM). Type can be : Magnoliophyta OR Asteraceae 
+        Flower table should now have a 'type' columns (ENUM). 
+        Type can be : Magnoliophyta OR Asteraceae 
 
 
     Step 1: 
