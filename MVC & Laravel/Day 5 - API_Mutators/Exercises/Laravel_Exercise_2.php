@@ -18,7 +18,7 @@
             - create a view 'flower-details.blade.php'
 
         This should display the details of a specific flower.
-    
+
     Step 3 :
 
         Edit your Flower model.
