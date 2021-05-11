@@ -42,10 +42,14 @@
 
 	Step 4 :
 
+		Create an account page.
+		Display all informations about users (except password).
+
+		This page is accessible only by the loggued in user.
+
+	Step 5 :
+
 		Anyone can access the flowers list page and flower details page.
 		
 		Hide the edit and delete button on the flowers list when user is not loggued in.
 		Only loggued in user can access delete and edit page.
-
-	Step 5 :
-
