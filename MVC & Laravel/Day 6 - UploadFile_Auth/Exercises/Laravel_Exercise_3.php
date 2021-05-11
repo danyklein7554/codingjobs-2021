@@ -44,7 +44,7 @@
 
 		Create an account page.
 		Display all informations about users (except password).
-
+		
 		This page is accessible only by the loggued in user.
 
 	Step 5 :
